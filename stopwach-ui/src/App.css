@@ -1,0 +1,111 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  align-items: center;  
+}
+
+.counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px blue;
+}
+
+.btns{
+  position: relative;
+  top:20px;
+  display: flex;
+}
+
+.counter p{
+  color: white;
+  position: relative;
+  top:80px;
+  font-size: x-large;
+  color: #fff; /* Set the text color to white */
+  text-shadow: 0 0 20px #f000ff;
+}
+
+.btn1{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  text-shadow: 0 0 20px #f000ff;
+  margin: 20px;
+  border: none;
+  box-shadow: 0 0 10px #f000ff;
+  background: black;
+  font-size: 15px;
+}
+
+.btn1:hover{
+  cursor: pointer;
+}
+
+.btn2{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color:mediumvioletred;
+  text-shadow: 0 0 20px #f000ff;
+  margin: 20px;
+  border: none;
+  box-shadow: 0 0 10px #f000ff;
+  background: black;
+  font-size: 15px;
+}
+
+.btn2:hover{
+  cursor: pointer;
+}
+
+.clock{
+  position: relative;
+  bottom: 10px;
+  right: 12px;
+}
+
+.hand {
+  transform-origin: top center;
+}
+
+.clock .sec{
+  border-radius:4px;
+  border: 4px solid #EFF7FF;
+  border: 2px solid #EFF7FF;
+  box-shadow: 0px 0px 8px 2px blue;
+  position: absolute;
+  height: 70px;
+  left: 55px;
+  animation-duration: 60s;
+}
+
+.pin {
+  position: absolute;
+  left: 50px;
+  border-radius: 50%;
+  bottom: -4.8px;
+  box-shadow: 0px 0px 8px 2px blue;
+  border: 6px solid #EFF7FF;
+}
+
+.animate{
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {   
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
